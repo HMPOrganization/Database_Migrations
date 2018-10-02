@@ -3,7 +3,7 @@ namespace Database_Migrations.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class _20180727_001 : DbMigration
+    public partial class aa : DbMigration
     {
         public override void Up()
         {
@@ -27,6 +27,7 @@ namespace Database_Migrations.Migrations
                         person_name = c.String(maxLength: 50),
                         age = c.Int(nullable: false),
                         enrollment_time = c.DateTime(),
+                        memo = c.String(maxLength: 50),
                     })
                 .PrimaryKey(t => t.person_no)
                 .ForeignKey("dbo.Grade", t => t.class_no)
@@ -55,6 +56,7 @@ namespace Database_Migrations.Migrations
                 .Index(t => t.person_no)
                 .Index(t => t.subject_no);
             
+
         }
         
         public override void Down()

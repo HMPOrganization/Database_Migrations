@@ -43,10 +43,10 @@ namespace Database_Migrations
             //Enable-Migrations -ContextProjectName Dal
 
             //生成迁升文件
-            //add-Migration -ContextProjectName Dal
+            //add-Migration -startupProjectName Dal
 
             //执行数据库迁升
-            //update-database
+            //Update-Database -StartUpProjectName Dal
         }
     }
 }

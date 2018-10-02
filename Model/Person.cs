@@ -30,7 +30,10 @@ namespace Model
 
         #region 字段信息
 
-        /// <summary>        /// 主键ID        /// </summary>        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //自增长列
+        /// <summary>
+        /// 主键ID
+        /// </summary>
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] //自增长列
         public int id { get; set; }
 
 
@@ -43,7 +46,10 @@ namespace Model
 
 
 
-        /// <summary>        /// 班级编号        /// </summary>        [Required, MaxLength(50)]//必填项
+        /// <summary>
+        /// 班级编号
+        /// </summary>
+        [Required, MaxLength(50)]//必填项
         public string class_no { get; set; }
 
 
@@ -55,21 +61,42 @@ namespace Model
 
 
 
-        /// <summary>        /// 人员编号        /// </summary>        [Required, MaxLength(50)]//必填项
+        /// <summary>
+        /// 人员编号
+        /// </summary>
+        [Required, MaxLength(50)]//必填项
         public string person_no { get; set; }
 
 
         
-        /// <summary>        /// 人员名称        /// </summary>        [MaxLength(50)]//必填项
+        /// <summary>
+        /// 人员名称
+        /// </summary>
+        [MaxLength(50)]//必填项
         public string person_name { get; set; }
 
-        /// <summary>        /// 年龄        /// </summary>
+        /// <summary>
+        /// 年龄
+        /// </summary>
         public int age { get; set; }
 
-        /// <summary>        /// 入学时间        /// </summary>
+        /// <summary>
+        /// 入学时间
+        /// </summary>
         public DateTime? enrollment_time { get; set; }
 
 
+        /// <summary>
+        /// memo
+        /// </summary>
+        [MaxLength(50)]//必填项
+        public string memo { get; set; }
+
+        /// <summary>
+        /// memo
+        /// </summary>
+        [MaxLength(50)]//必填项
+        public string memo2 { get; set; }
 
         #endregion
 
