@@ -7,7 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Dal;
+
+using Model;
+
+
 
 namespace Database_Migrations
 {
@@ -39,14 +42,24 @@ namespace Database_Migrations
 
         private void button3_Click(object sender, EventArgs e)
         {
+
+            //此工程仅用于升迁测试使用
             //迁升时使用另一个项目的连接来进行迁升（第一次建立文件时才使用）
             //Enable-Migrations -ContextProjectName Dal
 
             //生成迁升文件
-            //add-Migration -startupProjectName Dal
+            //add-Migration -name aa
 
             //执行数据库迁升
-            //Update-Database -StartUpProjectName Dal
+            //Update-Database  -Verbose
+
+
+            //前面加get-help可以显示帮助
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

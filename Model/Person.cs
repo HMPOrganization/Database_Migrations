@@ -50,6 +50,7 @@ namespace Model
         /// 班级编号
         /// </summary>
         [Required, MaxLength(50)]//必填项
+        [Index ("class_no_index",1)]
         public string class_no { get; set; }
 
 
@@ -65,6 +66,7 @@ namespace Model
         /// 人员编号
         /// </summary>
         [Required, MaxLength(50)]//必填项
+        [Index ("person_index",2,IsUnique =true)]
         public string person_no { get; set; }
 
 
@@ -97,6 +99,20 @@ namespace Model
         /// </summary>
         [MaxLength(50)]//必填项
         public string memo2 { get; set; }
+
+        /// <summary>
+        /// 录入时间
+        /// </summary>
+        [Required]
+        [DatabaseGenerated(DatabaseGeneratedOption.Computed)]//getdate()
+        public DateTime Input_date1 { get; set; }
+
+
+
+
+        //[DatabaseGenerated(DatabaseGeneratedOption.Computed)]//getdate()
+
+        public DateTime Input_date2 { get; set; }
 
         #endregion
 

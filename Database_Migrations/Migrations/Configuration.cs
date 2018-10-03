@@ -1,7 +1,6 @@
 namespace Database_Migrations.Migrations
 {
     using System;
-    using System.Collections.Generic;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
@@ -11,7 +10,7 @@ namespace Database_Migrations.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = true;
+            AutomaticMigrationsEnabled = false;
         }
 
         protected override void Seed(Dal.Context context)
@@ -20,7 +19,7 @@ namespace Database_Migrations.Migrations
 
             //  You can use the DbSet<T>.AddOrUpdate() helper extension method 
             //  to avoid creating duplicate seed data.
-            if (context.grade.Count<Grade>()==0)
+            if (context.grade.Count<Grade>() == 0)
             {
                 Grade grade = new Grade();
                 grade.class_no = "1";
@@ -51,20 +50,18 @@ namespace Database_Migrations.Migrations
                 context.person.AddOrUpdate(person1);
             }
 
-            var a = context.person.Any(s => s.memo2 == null);
-            List<Person> b = new List<Person>();
-            b = (from p in context.person.ToList<Person>()
-                    where p.memo2 == null
-                    select p).ToList();
-            
-
-            foreach (Person p in b)
-            {
-                p.memo2 = "memo2";
-                context.person.AddOrUpdate(p);
-            }
+            //var a = context.person.Any(s => s.memo2 == null);
+            //List<Person> b = new List<Person>();
+            //b = (from p in context.person.ToList<Person>()
+            //     where p.memo2 == null
+            //     select p).ToList();
 
 
+            //foreach (Person p in b)
+            //{
+            //    p.memo2 = "memo2";
+            //    context.person.AddOrUpdate(p);
+            //}
 
 
 

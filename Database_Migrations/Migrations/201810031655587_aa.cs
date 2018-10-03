@@ -31,7 +31,8 @@ namespace Database_Migrations.Migrations
                     })
                 .PrimaryKey(t => t.person_no)
                 .ForeignKey("dbo.Grade", t => t.class_no)
-                .Index(t => t.class_no);
+                .Index(t => t.person_no, unique: true, name: "person_index")
+                .Index(t => t.class_no, name: "class_no_index");
             
             CreateTable(
                 "dbo.Subject",
@@ -56,7 +57,6 @@ namespace Database_Migrations.Migrations
                 .Index(t => t.person_no)
                 .Index(t => t.subject_no);
             
-
         }
         
         public override void Down()
@@ -66,7 +66,8 @@ namespace Database_Migrations.Migrations
             DropForeignKey("dbo.Person_Subject", "person_no", "dbo.Person");
             DropIndex("dbo.Person_Subject", new[] { "subject_no" });
             DropIndex("dbo.Person_Subject", new[] { "person_no" });
-            DropIndex("dbo.Person", new[] { "class_no" });
+            DropIndex("dbo.Person", "class_no_index");
+            DropIndex("dbo.Person", "person_index");
             DropTable("dbo.Person_Subject");
             DropTable("dbo.Subject");
             DropTable("dbo.Person");
