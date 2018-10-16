@@ -37,6 +37,7 @@ namespace Database_Migrations.Migrations
                 person.memo = "memo";
                 person.person_name = "name";
                 person.person_no = "001";
+                person.Input_date2 = DateTime.Now;
 
                 context.person.AddOrUpdate(person);
 
@@ -47,6 +48,7 @@ namespace Database_Migrations.Migrations
                 person1.memo = "memo2";
                 person1.person_name = "name2";
                 person1.person_no = "002";
+                person1.Input_date2 = DateTime.Now;
                 context.person.AddOrUpdate(person1);
             }
 
@@ -62,9 +64,6 @@ namespace Database_Migrations.Migrations
             //    p.memo2 = "memo2";
             //    context.person.AddOrUpdate(p);
             //}
-
-
-
         }
     }
 }
