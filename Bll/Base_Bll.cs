@@ -13,5 +13,12 @@ namespace Bll
         {
             base_dal = new Base_Dal();
         }
+        ////fdsafdsa
+        ///////fdsafdsa
+        ///////fdsafdsa
+        ///////fdsafdsa
+        ///////fdsafdsa
+        ///////fdsafdsa
+        ///
     }
 }
