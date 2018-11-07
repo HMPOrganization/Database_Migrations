@@ -61,8 +61,8 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="Helper, Version=1.0.11.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Helper.1.0.11\lib\net40\Helper.dll</HintPath>
+    <Reference Include="Helper, Version=1.0.12.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Helper.1.0.12\lib\net40\Helper.dll</HintPath>
     </Reference>
     <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
       <HintPath>..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
@@ -131,9 +131,13 @@
     <Compile Include="Migrations\201810031658349_bb.Designer.cs">
       <DependentUpon>201810031658349_bb.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201810031659116_getdate.cs" />
-    <Compile Include="Migrations\201810031659116_getdate.Designer.cs">
-      <DependentUpon>201810031659116_getdate.cs</DependentUpon>
+    <Compile Include="Migrations\201810160746223_getdate.cs" />
+    <Compile Include="Migrations\201810160746223_getdate.Designer.cs">
+      <DependentUpon>201810160746223_getdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201810160751175_getdate2.cs" />
+    <Compile Include="Migrations\201810160751175_getdate2.Designer.cs">
+      <DependentUpon>201810160751175_getdate2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201811071450058_add_sex.cs" />
     <Compile Include="Migrations\201811071450058_add_sex.Designer.cs">
@@ -151,8 +155,11 @@
     <EmbeddedResource Include="Migrations\201810031658349_bb.resx">
       <DependentUpon>201810031658349_bb.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201810031659116_getdate.resx">
-      <DependentUpon>201810031659116_getdate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201810160746223_getdate.resx">
+      <DependentUpon>201810160746223_getdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201810160751175_getdate2.resx">
+      <DependentUpon>201810160751175_getdate2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811071450058_add_sex.resx">
       <DependentUpon>201811071450058_add_sex.cs</DependentUpon>
