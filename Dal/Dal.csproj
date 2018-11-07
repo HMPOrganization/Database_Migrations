@@ -93,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base_Dal.cs" />
+    <Compile Include="Grade_Dal.cs" />
     <Compile Include="Context.cs" />
     <Compile Include="Person_Dal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

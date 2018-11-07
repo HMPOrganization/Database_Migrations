@@ -114,6 +114,10 @@ namespace Model
 
         public DateTime Input_date2 { get; set; }
 
+
+        [Required]
+        public Model.Enum.Enum.Sex sex { get; set; }
+
         #endregion
 
         #region 扩展信息

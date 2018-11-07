@@ -12,11 +12,14 @@ namespace Dal
         public Base_Dal()
         {
             db = new Context();
+            db.Database.Log = Console.WriteLine;
         }
 
         public Base_Dal(Base_Dal bd)
         {
             db = bd.db;
         }
+
+    
     }
 }

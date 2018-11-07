@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,16 +25,19 @@ namespace Dal
             List<Person> person_list = new List<Person>();
 
 
-            person_list = db.person.Where(a => a.person_no==person_no).Select(a => a).ToList();
+            //person_list = db.person.Where(a => a.person_no==person_no).Select(a => a).ToList();
 
-            if (person_list.Count > 0)
-            {
-                return person_list[0];
-            }
-            else
-            {
-                return null;
-            }
+            //if (person_list.Count > 0)
+            //{
+            //    return person_list[0];
+            //}
+            //else
+            //{
+            //    return null;
+            //}
+            SqlParameter P0 = new SqlParameter("person_no", person_no);
+            return db.person.SqlQuery("select * from person where person_no=@person_no", P0).First();
+
         }
 
 
@@ -43,6 +47,9 @@ namespace Dal
         /// <returns>Person对象的list</returns>
         public List<Person> GetPerson()
         {
+
+
+
             List<Person> person_list = new List<Person>();
 
 
@@ -77,7 +84,7 @@ namespace Dal
 
             string sql;
             sql = person_List.ToString();
-            Console.WriteLine(sql);
+            Console.WriteLine("SQL iS ({0})",sql);
 
 
             //匿名类也可以用点点出来 

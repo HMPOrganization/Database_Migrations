@@ -37,7 +37,7 @@ namespace Database_Migrations.Migrations
                 person.memo = "memo";
                 person.person_name = "name";
                 person.person_no = "001";
-
+                person.sex = Model.Enum.Enum.Sex.woman;
                 context.person.AddOrUpdate(person);
 
                 Person person1 = new Person();
@@ -47,6 +47,7 @@ namespace Database_Migrations.Migrations
                 person1.memo = "memo2";
                 person1.person_name = "name2";
                 person1.person_no = "002";
+                person1.sex = Model.Enum.Enum.Sex.man;
                 context.person.AddOrUpdate(person1);
             }
 

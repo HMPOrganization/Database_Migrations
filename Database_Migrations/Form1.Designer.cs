@@ -105,6 +105,7 @@
             this.label1.Text = "//此工程仅用于升迁测试使用\r\n//迁升时使用另一个项目的连接来进行迁升（第一次建立文件时才使用）\r\n//Enable-Migrations -ContextPr" +
     "ojectName Dal\r\n\r\n//生成迁升文件\r\n//add-Migration -name aa\r\n\r\n//执行数据库迁升\r\n//Update-Datab" +
     "ase  -Verbose\r\n\r\n\r\n//前面加get-help可以显示帮助";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
