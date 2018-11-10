@@ -79,8 +79,22 @@ namespace WindowsFormsApp1
             obj1.Name = "person_no";
 
             obj1.Width = 80;
-            
-            
+
+             Func<string, int> A = x => x.Length;
+            int kkk = A("fdsa");
+
+
+
+            Func<int, int, bool> B = (a, b) => a > b;
+
+            bool kkk2 = B(10, 20);
+
+            Func<Person, bool> C = x => x.id > 10;
+
+            person_List.Where(x => x.id > 10 || x.person_name.Length>5);
+
+
+
 
             this.dataGridView1.Columns.AddRange(obj1);
 
