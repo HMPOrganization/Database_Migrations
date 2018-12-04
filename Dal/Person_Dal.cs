@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity.Validation;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -105,6 +106,63 @@ namespace Dal
 
 
         }
+
+        ///// <summary>
+        ///// 附加数据
+        ///// </summary>
+        ///// <param name="person"></param>
+        //public void AttachPerson(Person person,System.Data.Entity.EntityState state)
+        //{
+        //    db.Entry(person).State = state;
+        //    db.SaveChanges();
+
+        //}
+
+        ///// <summary>
+        ///// 保存
+        ///// </summary>
+        //public void Dal_Save()
+        //{
+           
+        //    try
+        //    {
+
+        //        db.SaveChanges();
+        //    }
+          
+        //    catch (Exception ex)
+        //    {
+        //        //ex.InnerException.Message();
+        //        Exception exnew = new Exception();
+        //        exnew = ex;
+
+        //        while (!IsNull(exnew.InnerException))
+        //        {
+        //            exnew = exnew.InnerException;
+        //        }
+
+        //        throw new Exception(exnew.Message);
+                
+        //    }
+         
+            
+            
+
+
+
+        //}
+
+        //private bool IsNull<T>(T mm)
+        //{
+        //    if (mm == null)
+        //    {
+        //        return true;
+        //    }
+        //    else
+        //    {
+        //        return false;
+        //    }
+        //}
 
     }
 }

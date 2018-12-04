@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bll", "Bll\Bll.csproj", "{A
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "WindowsFormsApp1\WindowsFormsApp1.csproj", "{97797096-2051-4521-99EA-9C6478E71759}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMAP", "IMAP\IMAP.csproj", "{D105C2A0-9FA1-4838-A554-DB7852975655}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{97797096-2051-4521-99EA-9C6478E71759}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97797096-2051-4521-99EA-9C6478E71759}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97797096-2051-4521-99EA-9C6478E71759}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D105C2A0-9FA1-4838-A554-DB7852975655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D105C2A0-9FA1-4838-A554-DB7852975655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D105C2A0-9FA1-4838-A554-DB7852975655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D105C2A0-9FA1-4838-A554-DB7852975655}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
