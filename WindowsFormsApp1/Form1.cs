@@ -308,5 +308,13 @@ namespace WindowsFormsApp1
             person_bll.person_save(this.exDataGridView1,a);
 
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            //测试webapi
+
+
+
+        }
     }
 }

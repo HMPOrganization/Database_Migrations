@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp1", "Windows
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMAP", "IMAP\IMAP.csproj", "{D105C2A0-9FA1-4838-A554-DB7852975655}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webapi", "webapi\webapi.csproj", "{B7562C0B-8E03-40B7-AFD9-2F9C81407542}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{D105C2A0-9FA1-4838-A554-DB7852975655}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D105C2A0-9FA1-4838-A554-DB7852975655}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D105C2A0-9FA1-4838-A554-DB7852975655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7562C0B-8E03-40B7-AFD9-2F9C81407542}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7562C0B-8E03-40B7-AFD9-2F9C81407542}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7562C0B-8E03-40B7-AFD9-2F9C81407542}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7562C0B-8E03-40B7-AFD9-2F9C81407542}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
